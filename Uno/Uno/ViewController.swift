@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
@@ -18,17 +19,13 @@ class ViewController: UIViewController {
         let testTextView = UITextView()
         testTextView.text = "Hello world!"
         testTextView.textAlignment = .center
-        testTextView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(testTextView)
 
-        let constraints = [
-            testTextView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor),
-            testTextView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor),
-            testTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            testTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ]
-
-        NSLayoutConstraint.activate(constraints)
+        testTextView.snp.makeConstraints { make in
+            make.top.equalTo(topLayoutGuide.snp.bottom)
+            make.bottom.equalTo(bottomLayoutGuide.snp.top)
+            make.leading.trailing.equalTo(view)
+        }
     }
 
     override func didReceiveMemoryWarning() {

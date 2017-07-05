@@ -5,6 +5,7 @@ target 'Uno' do
   use_frameworks!
 
   # Pods for Uno
+  pod 'SnapKit', '~> 3.2'
 
   target 'UnoTests' do
     inherit! :search_paths
