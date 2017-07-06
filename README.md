@@ -12,4 +12,10 @@ pod install # Install dependencies
 open Uno.xcworkspace # Open Xcode project.
 ```
 
+If you're running into problems with dependencies make sure your pod repos are up to date:
+```sh
+pod repo udate
+pod update
+```
+
 You can build and run in Xcode.

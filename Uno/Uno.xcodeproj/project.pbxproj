@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07A7805FA8A864AA7765B31E /* Pods_UnoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B28797F1BD605D2EFB41D8 /* Pods_UnoTests.framework */; };
+		239E34A01F0F065500B03DB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 239E349F1F0F065500B03DB2 /* GoogleService-Info.plist */; };
 		68C7C7F731BAC9A99C7C7906 /* Pods_UnoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010AD0BCDAE1F4E2DAE57733 /* Pods_UnoUITests.framework */; };
 		E6C270161F0DA0B50060DEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C270151F0DA0B50060DEA0 /* AppDelegate.swift */; };
 		E6C270181F0DA0B50060DEA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C270171F0DA0B50060DEA0 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		010AD0BCDAE1F4E2DAE57733 /* Pods_UnoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA55E8182E51963A8604EC7 /* Pods-UnoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnoTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-UnoTests/Pods-UnoTests.release.xcconfig"; sourceTree = "<group>"; };
 		22B28797F1BD605D2EFB41D8 /* Pods_UnoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239E349F1F0F065500B03DB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		542A7CD0D151BBB37D15DC7D /* Pods-Uno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uno.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Uno/Pods-Uno.release.xcconfig"; sourceTree = "<group>"; };
 		91B7B8D70498A1BBF3E7995A /* Pods-UnoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnoUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-UnoUITests/Pods-UnoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADC51A2CF427FE09FC0C49B3 /* Pods-UnoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnoUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-UnoUITests/Pods-UnoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		E6C270141F0DA0B50060DEA0 /* Uno */ = {
 			isa = PBXGroup;
 			children = (
+				239E349F1F0F065500B03DB2 /* GoogleService-Info.plist */,
 				E6C270151F0DA0B50060DEA0 /* AppDelegate.swift */,
 				E6C270171F0DA0B50060DEA0 /* ViewController.swift */,
 				E6C2701C1F0DA0B50060DEA0 /* Assets.xcassets */,
@@ -239,6 +242,7 @@
 				TargetAttributes = {
 					E6C270111F0DA0B50060DEA0 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9P7FQVD9YW;
 						ProvisioningStyle = Automatic;
 					};
 					E6C270251F0DA0B60060DEA0 = {
@@ -280,6 +284,7 @@
 			files = (
 				E6C270201F0DA0B50060DEA0 /* LaunchScreen.storyboard in Resources */,
 				E6C2701D1F0DA0B50060DEA0 /* Assets.xcassets in Resources */,
+				239E34A01F0F065500B03DB2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +593,7 @@
 			baseConfigurationReference = C4F21575EC70B1499028594C /* Pods-Uno.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9P7FQVD9YW;
 				INFOPLIST_FILE = Uno/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozilla.Uno;
@@ -601,6 +607,7 @@
 			baseConfigurationReference = 542A7CD0D151BBB37D15DC7D /* Pods-Uno.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9P7FQVD9YW;
 				INFOPLIST_FILE = Uno/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozilla.Uno;
@@ -686,6 +693,7 @@
 				E6C2703C1F0DA0B60060DEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6C2703D1F0DA0B60060DEA0 /* Build configuration list for PBXNativeTarget "UnoTests" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +702,7 @@
 				E6C2703F1F0DA0B60060DEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6C270401F0DA0B60060DEA0 /* Build configuration list for PBXNativeTarget "UnoUITests" */ = {
 			isa = XCConfigurationList;
@@ -702,6 +711,7 @@
 				E6C270421F0DA0B60060DEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
