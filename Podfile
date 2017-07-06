@@ -6,6 +6,8 @@ target 'Uno' do
 
   # Pods for Uno
   pod 'SnapKit', '~> 3.2'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
   target 'UnoTests' do
     inherit! :search_paths
