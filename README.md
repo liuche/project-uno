@@ -18,4 +18,9 @@ pod repo udate
 pod update
 ```
 
+### API keys
+You'll need the `Uno/Uno/GoogleService-Info.plist` file, which contains secure information to connect to Firebase. *Please do not add this file to version control.*
+
+If you are a team member, this file is available in the Engineering gdrive. If you are not, please contact a team member directly to discuss receiving this file for development.
+
 You can build and run in Xcode.
